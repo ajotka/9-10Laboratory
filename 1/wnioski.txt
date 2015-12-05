@@ -1,0 +1,4 @@
+1.
+	a) w tym wypadku metoda virtualna nie wplywa na kompilacje programu, tj. wszystko sie kompiluje. Jednakze przy uzyciu rzutowania mozemy zauwazyc pewna niescislosc. Otoz gdy nie posiadamy metody wirtualnej to mimo, iz wskazujemy na obiekt klasy pochodnej to i tak wywoluje sie metoda klasy bazowej.
+	b) dodanie override nie zmienilo dzialania programu. Jest to tylko podkreslenie, ze w tej klasie nastepuje przeslonienie metody z klasy bazowej. Gdyby dodac przedrostek const wtedy zamiast przeslonienia nastapiloby stworzenie nowej metody.
+	c) przy dodaniu final kompilator wypluwa blad o tresci: "overriding final function". To dlatego, ze nie mozna nadpisywac/przeslaniac metod finalnych. Jesli to klasa bylaby finalna, nie mozna byloby z niej dziedziczyc.
